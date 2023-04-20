@@ -1,0 +1,43 @@
+<div class="container ">
+  <app-header></app-header>
+  <p>Wellcome to the Appcomponent HTML file</p>
+  <!-- <app-card></app-card> -->
+  <!-- <app-accordtion></app-accordtion>
+  <app-carousal></app-carousal>
+  <app-layoutg></app-layoutg>
+  <app-components></app-components>  
+  <app-content></app-content>
+  <app-registration></app-registration> -->
+  <div class="row">
+    <div class="col">
+  <app-add-card></app-add-card>
+  <!-- <app-cockpit (serverAdd)="onAddServer($event)" (blueprintAdd)="onAddBlueprint($event)"></app-cockpit> -->
+</div>
+</div>
+  <!-- <div class="row">
+    <div class="col w-20">
+      <app-servertemplate
+      *ngFor="let selement of serverElements" [element]="selement">
+      <p>
+        with out ng-content declaration the below code wont work
+        <strong *ngIf="element.name === 'server' "  style="color: red ">{{element.content}} </strong>
+        <em *ngIf="element.name === 'blue' "   style="color: blue;">{{element.content }} </em>
+    </p>
+    
+    </app-servertemplate>
+    </div>
+  </div> -->
+
+  
+  <div class="row">
+    <div class="col">
+      <app-new-account (accountStatus)="addedAccountApp($event)"></app-new-account>
+      <hr>
+      <app-account  *ngFor=" let account of accounts; let i = index"
+                    [account]="account" [id]="i"
+                     (response)="updateAccount($event)"></app-account>
+
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,15 @@
+
+.container{
+    background-color: antiquewhite;
+    /* height: 750px; */
+    /* padding: px; */
+}
+
+.btn{
+    width: 30rem;
+}
+.headrow{
+    /* width: 60px; */
+    background-color: rgb(147, 108, 147);
+    height: 120px;
+}

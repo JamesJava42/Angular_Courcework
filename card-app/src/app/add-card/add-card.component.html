@@ -1,0 +1,50 @@
+<p>add-card works!</p>
+<div class="card bg-white shadow mt-3 personal-profile__adress mb-4">
+    <div class="card-header bg-white border-10">
+        <div class="row align-items-center mb-0">
+            <!-- header col -->
+            <div class="col">
+                 <h3 class="">Permanent Address</h3>
+            </div>
+            <!-- buttons col -->
+             <div class="col-4 d-flex justify-content-end">
+                <div *ngIf="!permanentaddEditable; else editButton4">
+                    <button  (click)="setFormAddEditable(4)"   
+                            class="btn btn-sm btn-primary d-flrx align-items-center justify-content-end" >
+                         <small>  
+                            <i class="fas fa-pencil-alt mr-1">Edit</i>
+                            
+                        </small>
+                    </button>
+                </div>
+                <ng-template #editButton4>
+                         <button (click)="saveProfile(4)" class="btn btn-sm btn-sucess" >Save</button>
+                </ng-template>
+             </div>
+
+        </div>   
+     </div>
+     <div class="card-body">
+        <form>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <div  *ngIf="!permanentaddEditable; else editData22">
+                            <p>
+                                <!-- working -->
+                                <app-add></app-add>                            </p>
+                        </div>
+                        <ng-template #editData22>
+                            <div class="container-fluid" px-0>
+                                <!-- calling the child component (app-add)-->
+                                <app-add></app-add>
+                                
+                            </div>
+
+                        </ng-template>
+                    </div>
+                </div>
+            </div>
+        </form>
+     </div>
+</div>

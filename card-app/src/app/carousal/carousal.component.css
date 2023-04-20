@@ -1,0 +1,11 @@
+.inputs > ul{
+    display: -ms-inline-grid;
+
+}
+header{
+    text-align: center;
+    width: auto;
+    height: 35px;
+    border: 2px solid rgb(126, 85, 85);
+    background-color:rgb(16, 158, 246);
+}

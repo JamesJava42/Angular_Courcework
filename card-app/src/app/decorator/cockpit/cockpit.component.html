@@ -1,0 +1,28 @@
+<p>cockpit works!</p>
+<div class="container mt-5 px-5 py-5">
+    <div class="row">
+        <div class="col">
+            <label class="form-label">Enter the Server Name</label>
+            <!-- <input class="form-control" type="text" name="server" [(ngModel)]="serverName" > -->
+            <!-- makeing the reference call to the html input tag  -->
+            <input class="form-control" type="text" name="server" #serverName > 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label class="form-label">Enter the Blue Name</label>
+            <!-- <input class="form-control" type="text" name="blueprint" [(ngModel)]="blueprintName" > -->
+            <input class="form-control" type="text" name="blueprint" #blueName >
+        </div>
+    </div>
+
+    <div class="row py-5" >
+        <div class="col">
+            <button class="btn btn-primary" (click)="addServer(serverName)">AddServer</button>
+
+        </div>
+        <div class="col">
+            <button class="btn btn-danger" (click)="addBlueprint()">AddBlueprint</button>
+        </div>
+    </div>
+</div>

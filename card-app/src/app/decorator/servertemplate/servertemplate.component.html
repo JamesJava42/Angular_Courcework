@@ -1,0 +1,17 @@
+<!-- <div class="container mb-2 py-3"> -->
+
+        <div class="panel panel-default">
+              <div class="panel-header bg-light">{{element.name}}</div>
+              
+              <div class="panel-body bg-white ">
+                <p>
+                <strong *ngIf="element.name === 'server' "  style="color: red ">{{element.content}} </strong>
+                <em *ngIf="element.name === 'blue' "   style="color: blue;">{{element.content }} </em>
+            </p>
+                <!-- <ng-content></ng-content> -->
+              </div>
+
+        </div>
+
+   
+<!-- </div> -->
