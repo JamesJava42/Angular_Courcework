@@ -1,0 +1,58 @@
+<div class="sidebar">
+    <section class="sidebar-content">
+        <div class="customerLogo">
+            <span class="profile-picture" >
+                <img class="img-fluid" height="80" width="200" alt="profile" [src]="img">
+            </span>
+        </div>
+
+        <!-- items in ul  -->
+        <div class="sidebar-content--scroll">
+            <ul>
+                <li>
+                    <a class="menuItem">
+                        <span class="material-icons-outlined">dashboard</span>Statistics
+                    </a>
+                </li>
+                <li>
+                    <a class="menuItem"><span class="material-icons-outlined">admin_panel_settings</span>Configuration</a>
+                </li>
+                <li>
+                    <a class="menuItem"><span class="material-icons-outlined" >grid_view</span>Dashboard</a>
+                </li>
+                <!-- Reports -->
+                <li   class="menu-dropdown">
+                    <a class="menuItem"><span class="material-icons-outlined">Sumarize</span>Reports
+                                        <span class="material-icons-outlined">expand_more</span>
+                                        <span class="material-icons-outlined">expand_less </span>
+                    </a>
+                    <ul>
+                        <li class="m-0">
+                            <a class="menuItem">
+                                <span class="material-icons-outlined">Compare</span>Compare Professor
+                            </a>
+                        </li>
+                        <li class="m-0">
+                            <a [class="menuItem"> <span class="material-icons-outlined">history_edu</span>Professor Report</a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li  class="menu-dropdown">
+                    <a class="menuItem" > <span class="material-icons-outlined">business</span>Departments
+                                          <span class="material-icons-outlined">epand_more</span>
+                                          <span class="material-icons-outlined">expand_less</span>
+                    </a>
+                    <ul>
+                        <li class="m-0" *ngFor="let department of Departmentarray; let i = index">
+                            <a >
+                                <span class="material-icons-outlined"></span>
+                            </a>
+
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+</div>

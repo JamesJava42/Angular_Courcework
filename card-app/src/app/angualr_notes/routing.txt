@@ -1,0 +1,9 @@
+Routing:
+   -> to actually dispally several endpoints with-out multiple pages.
+   -> In simpler, we only on the simple page appllocation and we using the routeing angular routing concept.
+Project woek:
+  we have 3- basics sections  Home, Servers, Users  ==>need to create 3 routing links like /home, /servers , /users 
+  Home:
+  Servers:  Vieew and Edit servers 
+            Service is to load and update the Servers.
+  useres : View Users 

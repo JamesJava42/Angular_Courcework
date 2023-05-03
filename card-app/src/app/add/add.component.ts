@@ -9,6 +9,7 @@ import { Address } from '../models/Address.model';
 export class AddComponent  implements OnInit{
 
 addressObject: Address;
+username:string;
 
 @Input() isSubmited: any;
 

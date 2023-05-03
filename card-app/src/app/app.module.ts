@@ -51,11 +51,15 @@ import { ServertemplateComponent } from './decorator/servertemplate/servertempla
 import { AddressComponent } from './project-components/address/address.component';
 import { AccountComponent } from './services-task/account/account.component';
 import { NewAccountComponent } from './services-task/new-account/new-account.component';
+import { TenentSidebarComponent } from './sidebars/tenent-sidebar/tenent-sidebar.component';
+import { FormValidComponent } from './practice/form-valid/form-valid.component';
+import { RoutingComponent } from './angualr_notes/routing/routing.component';
+import { SpecialcharactervalidatorDirective } from './page/membership/member-ship/member-ship.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardComponent,HeaderComponent, ValidirDirective, ButtonComponent, AccordtionComponent, CarousalComponent, LayoutgComponent, ComponentsComponent, FormsComponent, ButtonsComponent, AlertsComponent, AccordionComponent, TooltipComponent, BadgeComponent, BreadcrumbComponent, ButtonsGroupComponent, CollapseComponent, DropDownsComponent, PagenationsComponent, ProgressComponent, PopupsComponent, ScrollspysComponent, NavsComponent, SpinnersComponent, ToastsComponent, OffcanvasComponent, ModelsComponent, ListGroupsComponent, LayoutsComponent, ChecksRadioComponent, FloatingGroupsComponent, InputGroupsComponent, ValidationsComponent, FormControlComponent, SelectComponent, RangeComponent, Layout1Component, ContentComponent, RegistrationComponent, AddCardComponent, AddComponent, CockpitComponent, ServertemplateComponent, AddressComponent, AccountComponent, NewAccountComponent
+    CardComponent,HeaderComponent, ValidirDirective, ButtonComponent, AccordtionComponent, CarousalComponent, LayoutgComponent, ComponentsComponent, FormsComponent, ButtonsComponent, AlertsComponent, AccordionComponent, TooltipComponent, BadgeComponent, BreadcrumbComponent, ButtonsGroupComponent, CollapseComponent, DropDownsComponent, PagenationsComponent, ProgressComponent, PopupsComponent, ScrollspysComponent, NavsComponent, SpinnersComponent, ToastsComponent, OffcanvasComponent, ModelsComponent, ListGroupsComponent, LayoutsComponent, ChecksRadioComponent, FloatingGroupsComponent, InputGroupsComponent, ValidationsComponent, FormControlComponent, SelectComponent, RangeComponent, Layout1Component, ContentComponent, RegistrationComponent, AddCardComponent, AddComponent, CockpitComponent, ServertemplateComponent, AddressComponent, AccountComponent, NewAccountComponent, TenentSidebarComponent, FormValidComponent, SpecialcharactervalidatorDirective, RoutingComponent
   ],
   imports: [
     BrowserModule,
